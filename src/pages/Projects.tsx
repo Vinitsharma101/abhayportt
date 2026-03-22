@@ -4,11 +4,6 @@ import { ArrowLeft, X, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState, useCallback, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import project1 from "@/assets/project-1.jpg";
-import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.jpg";
-import project4 from "@/assets/project-4.jpg";
-import heroImage from "@/assets/hero-interior.jpg";
 import popCeilingFinal from "@/assets/pop-ceiling-final.png";
 import popCeilingWip from "@/assets/pop-ceiling-wip.jpeg";
 import img2 from "@/assets/2.png";
@@ -38,58 +33,27 @@ const projects = [
   {
     title: "Nordic Retreat",
     category: "Residential",
-    image: project1,
+    image: img6789,
     span: "normal",
     year: "2025",
     location: "Stockholm, Sweden",
     area: "240 m²",
     description: "A serene Scandinavian home blending natural materials with minimalist design. Every room breathes calm through muted tones, raw wood textures, and curated negative space.",
-    gallery: [project1, project2, project3, heroImage],
-  },
-  {
-    title: "Marble & Matte",
-    category: "Kitchen Design",
-    image: project2,
-    span: "tall",
-    year: "2024",
-    location: "Copenhagen, Denmark",
-    area: "85 m²",
-    description: "A kitchen where contrast is king — polished Carrara marble meets matte black cabinetry, creating a dramatic yet functional culinary space.",
-    gallery: [project2, project1, project4, heroImage],
+    gallery: [img6789, , ],
   },
   {
     title: "Light & Living",
     category: "Living Space",
-    image: project3,
+    image: img6789 ,
     span: "normal",
     year: "2024",
     location: "Oslo, Norway",
     area: "180 m²",
     description: "Designed to maximize natural light, this open-plan living space features floor-to-ceiling glazing and a restrained palette that lets the landscape take center stage.",
-    gallery: [project3, heroImage, project1, project2],
+    gallery: [  img6789, ],
   },
-  {
-    title: "Serene Sanctuary",
-    category: "Bathroom",
-    image: project4,
-    span: "wide",
-    year: "2025",
-    location: "Helsinki, Finland",
-    area: "45 m²",
-    description: "A spa-inspired bathroom wrapped in warm stone and soft lighting. The freestanding tub sits beneath a skylight, turning daily rituals into meditative moments.",
-    gallery: [project4, project3, project2, project1],
-  },
-  {
-    title: "Urban Loft",
-    category: "Modern Living",
-    image: heroImage,
-    span: "tall",
-    year: "2023",
-    location: "Berlin, Germany",
-    area: "310 m²",
-    description: "An industrial loft transformed into a warm, layered home. Exposed brick and steel beams are softened by bespoke furniture and rich textiles.",
-    gallery: [heroImage, project1, project3, project4],
-  },
+  
+  
   {
     title: "POP Ceiling Art",
     category: "Ceiling Design",
@@ -104,58 +68,27 @@ const projects = [
   {
     title: "Golden Hour Suite",
     category: "Hospitality",
-    image: project1,
+    image: img6789,
     span: "wide",
     year: "2024",
     location: "Reykjavik, Iceland",
     area: "120 m²",
     description: "A boutique hotel suite designed around the magic of Icelandic golden hour — amber tones, tactile fabrics, and panoramic views.",
-    gallery: [project1, project4, heroImage, project2],
+    gallery: [img6789,   ],
   },
   {
     title: "The Glass Pavilion",
     category: "Commercial",
-    image: project3,
+    image: img6789 ,
     span: "normal",
     year: "2023",
     location: "Amsterdam, Netherlands",
     area: "500 m²",
     description: "A transparent commercial space that dissolves the boundary between inside and out. Steel, glass, and greenery coexist in structural harmony.",
-    gallery: [project3, project2, project1, project4],
+    gallery: [ img6789],
   },
-  {
-    title: "Coastal Calm",
-    category: "Residential",
-    image: project2,
-    span: "tall",
-    year: "2025",
-    location: "Lisbon, Portugal",
-    area: "200 m²",
-    description: "A seaside retreat with whitewashed walls, linen drapes, and handmade ceramics. Every element echoes the rhythm of the nearby Atlantic.",
-    gallery: [project2, project3, heroImage, project1],
-  },
-  {
-    title: "Noir Studio",
-    category: "Office Space",
-    image: project4,
-    span: "normal",
-    year: "2024",
-    location: "London, UK",
-    area: "150 m²",
-    description: "A moody, all-black creative studio designed for focus. Custom acoustic panels and indirect lighting create an immersive workspace.",
-    gallery: [project4, project1, project2, project3],
-  },
-  {
-    title: "Velvet & Stone",
-    category: "Luxury Suite",
-    image: heroImage,
-    span: "wide",
-    year: "2023",
-    location: "Paris, France",
-    area: "170 m²",
-    description: "Where opulence meets restraint — sumptuous velvet furniture set against raw limestone walls in a Parisian apartment with soul.",
-    gallery: [heroImage, project4, project3, project1],
-  },
+  
+  
   {
     title: "Alabaster Alcove",
     category: "Residential",
@@ -165,7 +98,7 @@ const projects = [
     location: "Mumbai, India",
     area: "195 m²",
     description: "A contemporary Indian home dressed in ivory tones and soft ambient lighting. Handcrafted joinery and layered textiles give warmth to every corner.",
-    gallery: [img2, img3, img4, heroImage],
+    gallery: [img2, img3, img4,  ],
   },
   {
     title: "Canvas & Concrete",
@@ -264,7 +197,7 @@ const projects = [
     location: "Coorg, India",
     area: "350 m²",
     description: "Perched in the coffee estates of Coorg, this hill villa dissolves into its landscape with stone floors, timber ceilings, and mist-filtered daylighting.",
-    gallery: [img88, img99, img111, heroImage],
+    gallery: [img88, img99, img111,  ],
   },
   {
     title: "Slate & Silk",
@@ -288,28 +221,7 @@ const projects = [
     description: "A modern reimagining of the traditional Indian courtyard home, where open-to-sky volumes anchor social life and natural ventilation replaces mechanical air.",
     gallery: [img111, img222, img444, img2],
   },
-  {
-    title: "Copper Atelier",
-    category: "Commercial",
-    image: img222,
-    span: "normal",
-    year: "2024",
-    location: "Kochi, India",
-    area: "130 m²",
-    description: "A design studio clad in copper mesh panels and warm walnut joinery. The workspace doubles as a live showcase of materiality and craft.",
-    gallery: [img222, img111, img444, img564],
-  },
-  {
-    title: "The White Edit",
-    category: "Minimalist",
-    image: img444,
-    span: "tall",
-    year: "2025",
-    location: "Goa, India",
-    area: "175 m²",
-    description: "A beach house stripped to its purest form — white plaster, white linen, white stone. Only the sea view breaks the monochrome.",
-    gallery: [img444, img564, img768, img3],
-  },
+  
   {
     title: "Blueprint Studio",
     category: "Office Space",

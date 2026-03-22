@@ -1,19 +1,11 @@
 import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
 import { useRef, useState, useEffect, useCallback } from "react";
-import heroImage from "@/assets/hero-interior.jpg";
 import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
 
 const slides = [
-  {
-    image: heroImage,
-    subtitle: "Interior Design Studio",
-    heading: ["We Design", "Spaces That", "Inspire Living"],
-    headingItalicIndex: 1,
-    description:
-      "Creating timeless interiors that blend Scandinavian simplicity with luxurious comfort. Every space tells a unique story.",
-  },
+  
   {
     image: project1,
     subtitle: "Residential Excellence",

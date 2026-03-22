@@ -2,17 +2,25 @@ import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import project1 from "@/assets/project-1.jpg";
-import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.jpg";
-import project4 from "@/assets/project-4.jpg";
+import img44 from "@/assets/44.jpeg";
+import img55 from "@/assets/55.jpeg";
+import img88 from "@/assets/88.jpeg";
+import img99 from "@/assets/99.jpeg";
+import img111 from "@/assets/111.jpeg";
+
+import imgDd from "@/assets/dd.jpeg";
+import imgEr from "@/assets/er.jpeg";
 import popCeilingFinal from "@/assets/pop-ceiling-final.png";
 
 const projects = [
-  { title: "Nordic Retreat", category: "Residential", image: project1 },
-  { title: "Marble & Matte", category: "Kitchen Design", image: project2 },
+  { title: "Nordic Retreat", category: "Residential", image: img44 },
+  { title: "Marble & Matte", category: "Kitchen Design", image: img88 },
   { title: "POP Ceiling Art", category: "Ceiling Design", image: popCeilingFinal },
-  { title: "Serene Sanctuary", category: "Bathroom", image: project4 },
+  { title: "Serene Sanctuary", category: "Bedroom", image: img99 },
+  { title: "Serene Sanctuary", category: "Kitchen Design", image: img55 },
+  { title: "Serene Sanctuary", category: "Bathroom", image: imgDd },
+  { title: "Serene Sanctuary", category: "Bathroom", image: imgEr },
+  { title: "Serene Sanctuary", category: "Bedroom", image: img111 },
   
 ];
 
